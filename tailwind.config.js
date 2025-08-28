@@ -1,15 +1,10 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/index.html", // Scans your HTML file
-    "./src/index.js", // Scans your JavaScript file
+    "./index.html", // Looks for classes in the root index.html
+    "./src/**/*.{js,css}", // Looks for classes in any JS or CSS files in src
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
